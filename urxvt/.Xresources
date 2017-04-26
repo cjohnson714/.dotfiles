@@ -1,4 +1,4 @@
-#include "$HOME/.colors/dotshare"
+#include ".colors/dotshare"
 
 urxvt*cursorUnderline:	1
 urxvt*cursorBlink:	true

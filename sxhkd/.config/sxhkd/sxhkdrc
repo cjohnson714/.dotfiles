@@ -26,8 +26,8 @@ alt + shift + Escape
 	bspc quit
 
 # close and kill
-alt + {_,shift + }w
-	bspc node -{c,k}
+alt + +shift + x
+	bspc node -c
 
 # alternate between the tiled and monocle layout
 alt + space
