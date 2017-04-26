@@ -8,7 +8,7 @@
 
 ```
 # Dependencies
-- bspwm, sxhkd, zsh, rxvt-unicode, rofi
+- [bspwm](https://github.com/baskerville/bspwm), [sxhkd](https://github.com/baskerville/sxhkd), zsh, rxvt-unicode, [rofi](https://davedavenport.github.io/rofi/)
 
   `sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi`
 
@@ -16,7 +16,7 @@
 
     `chsh -s /bin/zsh`
 
-- [polybar][8a64b679], hsetroot
+- [polybar][8a64b679], [hsetroot](https://github.com/himdel/hsetroot)
   - Through an AUR helper:
 
     `yaourt polybar hsetroot`
