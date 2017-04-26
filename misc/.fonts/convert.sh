@@ -1,5 +1,5 @@
 #!/bin/bash
-FILES="/home/integrus/.fonts/"
+FILES="$HOME/.fonts/"
 shopt -s nullglob
 for f in $FILES*.bdf
 do

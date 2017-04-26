@@ -1,4 +1,4 @@
-#include "/home/integrus/.colors/dotshare"
+#include "$HOME/.colors/dotshare"
 
 urxvt*cursorUnderline:	1
 urxvt*cursorBlink:	true

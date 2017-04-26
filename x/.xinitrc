@@ -1,9 +1,9 @@
 VBoxClient-all
 xrdb $HOME/.Xresources
-xset +fp ~/.fonts
+xset +fp $HOME/.fonts
 xset fp rehash
 fc-cache
-hsetroot -tile $HOME/.wallpaper.png
+hsetroot -tile $HOME/.wallpapers/tile1.png
 xsetroot -cursor_name left_ptr
 urxvtd -q -f -o
 exec bspwm
