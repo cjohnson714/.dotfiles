@@ -1,0 +1,13 @@
+#include "/home/integrus/.colors/dotshare"
+
+urxvt*cursorUnderline:	1
+urxvt*cursorBlink:	true
+urxvt*scrollBar:	false
+urxvt*depth:		32
+urxvt*internalBorder:	5
+urxvt*dynamicColors:	on
+urxvt.urgentOnBell:	true
+urxvt*letterspace:	-1
+urxvt*url-launcher:	/usr/bin/firefox
+
+Xcursor.size:		16
