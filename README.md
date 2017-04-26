@@ -10,20 +10,20 @@
 # Dependencies
 - bspwm, sxhkd, zsh, rxvt-unicode, rofi
 
-`sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi`
+  `sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi`
 
   - Change shell to zsh
 
-`chsh -s /bin/zsh`
+    `chsh -s /bin/zsh`
 
 - [polybar][8a64b679], hsetroot
   - Through an AUR helper:
 
-`yaourt polybar hsetroot`
+    `yaourt polybar hsetroot`
 
-or
+    or
 
-`packer -S polybar hsetroot`
+    `packer -S polybar hsetroot`
 
   - [Manually build polybar from source:][6faa9aee]
 ```
