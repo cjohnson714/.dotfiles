@@ -6,6 +6,15 @@
 ██████╔╝╚██████╔╝   ██║   ██║     ██║███████╗███████╗███████║
 ╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
 
+bspwm -------> bspwm wm configs
+misc --------> fonts, colors, scripts
+polybar -----> bar configs
+sxhkd -------> keybinding configs
+urxvt -------> urxvt specific config and Xresources
+wallpaper ---> any wallpapers that I used
+x -----------> .xinitrc
+zsh ---------> zsh config files and .zprofile
+
 ```
 # Dependencies
 - [bspwm](https://github.com/baskerville/bspwm), [sxhkd](https://github.com/baskerville/sxhkd), zsh, rxvt-unicode, [rofi](https://davedavenport.github.io/rofi/)
