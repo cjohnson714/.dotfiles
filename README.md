@@ -26,13 +26,13 @@
     `packer -S polybar hsetroot`
 
   - [Manually build polybar from source:][6faa9aee]
-```
-git clone --branch 3.0.5 --recursive https://github.com/jaagr/polybar
-mkdir polybar/build
-cd polybar/build
-cmake ..
-sudo make install
-```
+    ```
+    git clone --branch 3.0.5 --recursive https://github.com/jaagr/polybar
+    mkdir polybar/build
+    cd polybar/build
+    cmake ..
+    sudo make install
+    ```
 
   [8a64b679]: https://github.com/jaagr/polybar "polybar github"
   [6faa9aee]: https://github.com/jaagr/polybar#building-from-source "polybar github"
