@@ -67,3 +67,5 @@ To remove configs:
   - For figlet ASCII fonts used in this document, inspiration for using stow
 - crshd: [github/crshd](https://github.com/crshd)
   - For colors/zsh configs
+- unix121: [github/unix121](https://github.com/unix121/i3wm-themes)
+  - For polybar config

@@ -3,7 +3,7 @@
 #
 
 # terminal emulator
-alt + Return
+alt + shift+ Return
 	urxvtc
 
 # program launcher
@@ -17,6 +17,7 @@ alt + Escape
 # firefox
 alt + b
 	firefox
+
 #
 # bspwm hotkeys
 #
@@ -25,8 +26,8 @@ alt + b
 alt + shift + Escape
 	bspc quit
 
-# close and kill
-alt + +shift + x
+# close
+alt + shift + x
 	bspc node -c
 
 # alternate between the tiled and monocle layout
