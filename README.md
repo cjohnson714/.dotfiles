@@ -9,6 +9,7 @@
 bspwm -------> bspwm wm configs
 misc --------> fonts, colors, scripts
 polybar -----> bar configs
+rofi --------> rofi configs
 sxhkd -------> keybinding configs
 urxvt -------> urxvt specific config and Xresources
 wallpaper ---> any wallpapers that I used
