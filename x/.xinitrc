@@ -3,7 +3,7 @@ VBoxClient-all
 xset +fp $HOME/.fonts
 xset fp rehash
 fc-cache
-hsetroot -tile $HOME/.wallpapers/tile1.png
+hsetroot -tile $HOME/.wallpapers/coil.png
 xsetroot -cursor_name left_ptr
 urxvtd -q -f -o
 exec bspwm

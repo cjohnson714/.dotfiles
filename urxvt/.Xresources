@@ -1,6 +1,6 @@
 #include ".colors/dotshare"
 
-Xft.dpi:		96
+Xft.dpi:		109
 Xft.autohint:		0
 Xft.antialias:		1
 Xft.hinting:		true
@@ -12,10 +12,15 @@ urxvt*cursorUnderline:	1
 urxvt*cursorBlink:	true
 urxvt*scrollBar:	false
 urxvt*depth:		32
-urxvt*internalBorder:	5
+urxvt*internalBorder:	10
 urxvt*dynamicColors:	on
 urxvt.urgentOnBell:	true
 urxvt*letterspace:	-1
 urxvt*url-launcher:	/usr/bin/firefox
+
+urxvt*font:		xft:MiscTamzen:size=11:style=Regular
+urxvt*boldFont:		xft:MiscTamzen:size=11:style=Bold
+urxvt*italicFont:	xft:MiscTamzen:size=11:style=Regular
+urxvt*bolditalicFont:	xft:MiscTamzen:size=11:style=Bold
 
 Xcursor.size:		16

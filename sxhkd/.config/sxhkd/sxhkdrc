@@ -18,6 +18,9 @@ alt + Escape
 alt + b
 	firefox
 
+# screenshot
+Print
+	scrot -q 100
 #
 # bspwm hotkeys
 #

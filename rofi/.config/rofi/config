@@ -6,4 +6,4 @@ rofi.color-window: #393939, #393939, #a0cf5d
 rofi.color-normal: #393939, #dddddd, #393939, #a0cf5d, #393939
 rofi.color-active: #393939, #dddddd, #393939, #a0cf5d, #393939
 rofi.color-urgent: #393939, #d23d3d, #393939, #d23d3d, #dddddd
-rofi.font:         Misc Tamzen 12
+rofi.font:         Misc Tamzen 11
