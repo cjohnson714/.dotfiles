@@ -19,10 +19,10 @@ zsh ---------> zsh config files and .zprofile
 
 ```
 ## Contents
-1. [Dependencies](#Dependencies)
-2. [Installation](#Installation)
-3. [Screenshots](#Screenshots)
-4. [Credits](#Credits)
+1. [Dependencies](#dependencies)
+2. [Installation](#installation)
+3. [Screenshots](#screenshots)
+4. [Credits](#credits)
 
 ## Dependencies
 - [bspwm](https://github.com/baskerville/bspwm), [sxhkd](https://github.com/baskerville/sxhkd), zsh, rxvt-unicode, [rofi](https://davedavenport.github.io/rofi/)
