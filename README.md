@@ -21,7 +21,7 @@ zsh ---------> zsh config files and .zprofile
 # Dependencies
 - [bspwm](https://github.com/baskerville/bspwm), [sxhkd](https://github.com/baskerville/sxhkd), zsh, rxvt-unicode, [rofi](https://davedavenport.github.io/rofi/)
 
-  `sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi`
+  `sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi vim`
 
   - Change shell to zsh
 
