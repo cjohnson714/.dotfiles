@@ -12,6 +12,7 @@ polybar -----> bar configs
 rofi --------> rofi configs
 sxhkd -------> keybinding configs
 urxvt -------> urxvt specific config and Xresources
+vim ---------> vim config files
 wallpaper ---> any wallpapers that I used
 x -----------> .xinitrc
 zsh ---------> zsh config files and .zprofile
