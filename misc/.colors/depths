@@ -1,0 +1,36 @@
+! Color-scheme : Depths
+! Author       : Lazy
+! vim: set filetype=xdefaults :
+
+*foreground:    #F0F0F0
+*background:    #353C58
+
+!black
+*color0:        #262D3F
+*color8:        #6f7885
+!red
+*color1:        #FFC4B0
+*color9:        #F59363
+!green
+*color2:        #AFDACC
+*color10:       #AFDACC
+!yellow
+*color3:        #F9E0AB
+*color11:       #F0D878
+!blue
+*color4:        #DE846C
+*color12:       #D56E7C
+!magenta
+*color5:        #A1F9B1
+*color13:       #A1F9B1
+!cyan
+*color6:        #9DC2B9
+*color14:       #9DC2B9
+!white
+*color7:        #f0f0f0
+*color15:       #f0f0f0
+
+*borderColor:   #353C58
+*colorBD:       #ffffff
+*cursorColor:   #F59363
+*cursorColor2:  #353C58

@@ -1,0 +1,36 @@
+! Color-scheme : Relic Dark
+! Author       : stark <stark@openmailbox.org>
+! vim: set filetype=xdefaults :
+
+*foreground:    #8FA388
+*background:    #1D2426
+
+!black
+*color0:        #39474A
+*color8:        #4C5F63
+!red
+*color1:        #986345
+*color9:        #B07350
+!green
+*color2:        #788249
+*color10:       #869151
+!yellow
+*color3:        #9B6A46
+*color11:       #AF6B42
+!blue
+*color4:        #3E5951
+*color12:       #567A6E
+!magenta
+*color5:        #B9924A
+*color13:       #D69D55
+!cyan
+*color6:        #5d796a
+*color14:       #668574
+!white
+*color7:        #977D5E
+*color15:       #AB9C71
+
+*borderColor:   #1D2426
+*colorBD:       #ffffff
+*cursorColor:   #BE5E1E
+*cursorColor2:  #1D2426
