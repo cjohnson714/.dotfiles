@@ -49,7 +49,7 @@ zsh ---------> zsh config files and .zprofile
   [6faa9aee]: https://github.com/jaagr/polybar#building-from-source "polybar github"
 
 # Installation
-Uses gnu stow to install:
+Uses GNU Stow to install:
 
 `sudo pacman -S stow`
 
