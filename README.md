@@ -18,7 +18,13 @@ x -----------> .xinitrc
 zsh ---------> zsh config files and .zprofile
 
 ```
-# Dependencies
+## Contents
+1. [Dependencies](#Dependencies)
+2. [Installation](#Installation)
+3. [Screenshots](#Screenshots)
+4. [Credits](#Credits)
+
+## Dependencies
 - [bspwm](https://github.com/baskerville/bspwm), [sxhkd](https://github.com/baskerville/sxhkd), zsh, rxvt-unicode, [rofi](https://davedavenport.github.io/rofi/)
 
   `sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi vim`
@@ -48,7 +54,7 @@ zsh ---------> zsh config files and .zprofile
   [8a64b679]: https://github.com/jaagr/polybar "polybar github"
   [6faa9aee]: https://github.com/jaagr/polybar#building-from-source "polybar github"
 
-# Installation
+## Installation
 Uses GNU Stow to install:
 
 `sudo pacman -S stow`
@@ -64,9 +70,10 @@ To remove configs:
 
 `stow -D bspwm misc sxhkd ...`
 
-# Screenshots
+## Screenshots
 ![SS1](screenshots/screenshot.png)
-# Credits
+
+## Credits
 - xero: [github/xero/dotfiles](https://github.com/xero/dotfiles)
   - For figlet ASCII fonts used in this document, inspiration for using stow
 - crshd: [github/crshd](https://github.com/crshd)
