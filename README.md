@@ -76,7 +76,8 @@ To remove configs:
 
 ## Credits
 - xero: [github/xero/dotfiles](https://github.com/xero/dotfiles)
-  - For figlet ASCII fonts used in this document, inspiration for using stow
+  - For figlet ASCII fonts used in this document, inspiration for using stow, wallpaper, etc.
+  - I basically ripped a lot of his stuff off.
 - crshd: [github/crshd](https://github.com/crshd)
   - For colors/zsh configs
 - unix121: [github/unix121](https://github.com/unix121/i3wm-themes)
