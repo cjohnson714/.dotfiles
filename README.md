@@ -7,6 +7,7 @@
 ╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
 
 bspwm -------> bspwm wm configs
+dunst -------> dunst configs
 misc --------> fonts, colors, scripts
 polybar -----> bar configs
 rofi --------> rofi configs
@@ -25,9 +26,9 @@ zsh ---------> zsh config files and .zprofile
 4. [Credits](#credits)
 
 ## Dependencies
-- [bspwm](https://github.com/baskerville/bspwm), [sxhkd](https://github.com/baskerville/sxhkd), zsh, rxvt-unicode, [rofi](https://davedavenport.github.io/rofi/)
+- [bspwm](https://github.com/baskerville/bspwm), [sxhkd](https://github.com/baskerville/sxhkd), zsh, rxvt-unicode, [rofi](https://davedavenport.github.io/rofi/), vim, dunst
 
-  `sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi vim`
+  `sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi vim dunst`
 
   - Change shell to zsh
 
@@ -40,7 +41,7 @@ zsh ---------> zsh config files and .zprofile
 
     or
 
-    `packer -S polybar hsetroot`
+    `pacaur -S polybar hsetroot`
 
   - [Manually build polybar from source:][6faa9aee]
     ```

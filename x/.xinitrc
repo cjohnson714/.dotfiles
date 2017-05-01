@@ -5,5 +5,7 @@ xset fp rehash
 fc-cache
 hsetroot -tile $HOME/.wallpapers/coil.png
 xsetroot -cursor_name left_ptr
+dunst &
+wmname LG3D
 urxvtd -q -f -o
 exec bspwm
