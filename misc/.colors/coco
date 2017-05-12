@@ -1,36 +1,23 @@
-! Color-scheme : Co-Co-Colors
-! Author       : Mafia
-! vim: set filetype=xdefaults :
+! -- Title:         coco 
+! -- Author:        dkeg
+! -- Created:       2014
+! -- Modified:      2016
 
-*foreground:    #6B6045
-*background:    #0B0B0B
-
-!black
-*color0:        #25221C
-*color8:        #98481C
-!red
-*color1:        #EB961B
-*color9:        #C48371
-!green
-*color2:        #5B8797
-*color10:       #31915B
-!yellow
-*color3:        #C78415
-*color11:       #6A2929
-!blue
-*color4:        #8F5011
-*color12:       #DABD69
-!magenta
-*color5:        #5C507B
-*color13:       #3884A4
-!cyan
-*color6:        #D73861
-*color14:       #BF5742
-!white
-*color7:        #0B0B0B
-*color15:       #774F44
-
-*borderColor:   #0B0B0B
-*colorBD:       #84669A
-*cursorColor:   #EB961B
-*cursorColor2:  #0B0B0B
+#define bg    #1f1d1d
+#define fg    #ccbaad
+#define blk   #201e1e
+#define bblk  #4a4a4a
+#define red   #6b4747
+#define grn   #8d7138
+#define ylw   #856237
+#define blu   #3c3c49
+#define mag   #3c342e
+#define cyn   #5d5a4b
+#define wht   #ccbaad
+#define bred  #6b4747
+#define bgrn  #8d7138
+#define bylw  #856237
+#define bblu  #3c3c49
+#define bmag  #3c342e
+#define bcyn  #5d5a4b
+#define bwht  #eae2dc

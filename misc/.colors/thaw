@@ -1,0 +1,43 @@
+! Color-scheme : In_the_Thaw
+! Author       : gutterslob
+! vim: set filetype=xdefaults :
+
+*foreground:       #746C48
+*background:       #170F0D
+
+!black
+*color0:           #392925
+*color8:           #544B2E
+
+!red
+*color1:           #98724C
+*color9:           #AF652F
+
+!green
+*color2:           #908F32
+*color10:          #C3C13D
+
+!yellow
+*color3:           #AA964C
+*color11:          #C8B55B
+
+!blue
+*color4:           #7B854E
+*color12:          #70A16C
+
+!magenta
+*color5:           #6B5644
+*color13:          #98724C
+
+!cyan
+*color6:           #5C5142
+*color14:          #778725
+
+!white
+*color7:           #C8B55B
+*color15:          #E4DC8C
+
+*borderColor:      #170F0D
+*colorBD:          #C8B984
+*cursorColor:      #6666CC
+*cursorColor2:     #170F0D

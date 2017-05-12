@@ -1,0 +1,36 @@
+! Color-scheme : Co-Co-Colors
+! Author       : Mafia
+! vim: set filetype=xdefaults :
+
+*foreground:    #6B6045
+*background:    #0B0B0B
+
+!black
+*color0:        #25221C
+*color8:        #98481C
+!red
+*color1:        #EB961B
+*color9:        #C48371
+!green
+*color2:        #5B8797
+*color10:       #31915B
+!yellow
+*color3:        #C78415
+*color11:       #6A2929
+!blue
+*color4:        #8F5011
+*color12:       #DABD69
+!magenta
+*color5:        #5C507B
+*color13:       #3884A4
+!cyan
+*color6:        #D73861
+*color14:       #BF5742
+!white
+*color7:        #0B0B0B
+*color15:       #774F44
+
+*borderColor:   #0B0B0B
+*colorBD:       #84669A
+*cursorColor:   #EB961B
+*cursorColor2:  #0B0B0B

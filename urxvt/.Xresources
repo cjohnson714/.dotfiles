@@ -4,9 +4,9 @@
 !░▀░▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░
 !░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-#include ".colors/dotshare"
+#include ".colors/bulb"
 
-Xft.dpi:                109
+Xft.dpi:                96
 Xft.autohint:           0
 Xft.antialias:          1
 Xft.hinting:            true
@@ -18,7 +18,7 @@ urxvt*cursorUnderline:  1
 urxvt*cursorBlink:      true
 urxvt*scrollBar:        false
 urxvt*depth:            32
-urxvt*internalBorder:   10
+urxvt*internalBorder:   5
 urxvt*dynamicColors:    on
 urxvt.urgentOnBell:     true
 urxvt*letterspace:      -1
@@ -31,9 +31,50 @@ urxvt*url-launcher:     /usr/bin/firefox
 !urxvt*bolditalicFont:   xft:MiscTamzen:size=11:style=Bold
 
 ! Tamzen Powerline-Patched
-urxvt*font:             xft:MiscTamzenForPowerline:size=11:style=Regular
-urxvt*boldFont:         xft:MiscTamzenForPowerline:size=11:style=Bold
-urxvt*italicFont:       xft:MiscTamzenForPowerline:size=11:style=Regular
-urxvt*bolditalicFont:   xft:MiscTamzenForPowerline:size=11:style=Bold
+!urxvt*font:             xft:MiscTamzenForPowerline:size=11:style=Regular
+!urxvt*boldFont:         xft:MiscTamzenForPowerline:size=11:style=Bold
+!urxvt*italicFont:       xft:MiscTamzenForPowerline:size=11:style=Regular
+!urxvt*bolditalicFont:   xft:MiscTamzenForPowerline:size=11:style=Bold
+urxvt*font:            -misc-tamzenforpowerline-medium-*-*-*-14-*-*-*-*-*-*-*
+urxvt*boldFont:        -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
+urxvt*italicFont:      -misc-tamzenforpowerline-medium-*-*-*-14-*-*-*-*-*-*-*
+urxvt*bolditalicFont:  -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
+
+! Lemon
+!urxvt*font:             -benis-lemon-*-*-*-*-*-*-*-75-*-*-*-*
+
+! Gohu
+!urxvt*font: -gohu-gohufont-medium-*-*-*-14-*-*-*-*-*-iso8859-*
 
 Xcursor.size:           16
+
+! Colors
+*background:   bg
+*foreground:   fg
+
+*color0:      blk
+*color8:      bblk
+*color1:      red
+*color9:      bred
+*color2:      grn
+*color10:     bgrn
+*color3:      ylw
+*color11:     bylw
+*color4:      blu
+*color12:     bblu
+*color5:      mag
+*color13:     bmag
+*color6:      cyn
+*color14:     bcyn
+*color7:      wht
+*color15:     bwht
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: blk, blk, bcyan
+rofi.color-normal: blk, wht, blk, bcyan, blk
+rofi.color-active: blk, why, blk, bcyan, blk
+rofi.color-urgent: blk, bred, blk, bred, wht
+rofi.font:         Misc Tamzen 12

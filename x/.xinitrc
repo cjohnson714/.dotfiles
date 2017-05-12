@@ -1,5 +1,6 @@
 VBoxClient-all
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+#[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+xrdb -merge ~/.Xresources &
 xset +fp $HOME/.fonts
 xset fp rehash
 fc-cache
