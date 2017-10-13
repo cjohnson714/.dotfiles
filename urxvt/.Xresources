@@ -15,7 +15,7 @@ Xft.rgba:               rgb
 Xft.lcdfilter:          lcddefault
 
 urxvt*cursorUnderline:  1
-urxvt*cursorBlink:      true
+urxvt*cursorBlink:      1
 urxvt*scrollBar:        false
 urxvt*depth:            32
 urxvt*internalBorder:   5
