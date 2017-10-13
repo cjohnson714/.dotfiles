@@ -84,3 +84,5 @@ To remove configs:
   - For polybar config
 - donniebishop: [github/donniebishop/dotfiles](https://github.com/donniebishop/dotfiles)
   - I ripped off his floral colorscheme
+- jaagr: [github/jaagr/dots](https://github.com/jaagr/dots)
+  - Stole a lot from his polybar configs
