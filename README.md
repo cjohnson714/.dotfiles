@@ -28,20 +28,20 @@ zsh ---------> zsh config files and .zprofile
 ## Dependencies
 - [bspwm](https://github.com/baskerville/bspwm), [sxhkd](https://github.com/baskerville/sxhkd), zsh, rxvt-unicode, [rofi](https://davedavenport.github.io/rofi/), vim, dunst
 
-  `sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi vim dunst`
+  `sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi vim dunst feh`
 
   - Change shell to zsh
 
     `chsh -s /bin/zsh`
 
-- [polybar][8a64b679], [hsetroot](https://github.com/himdel/hsetroot)
+- [polybar][8a64b679]
   - Through an AUR helper:
 
-    `yaourt polybar hsetroot`
+    `yaourt polybar`
 
     or
 
-    `pacaur -S polybar hsetroot`
+    `pacaur -S polybar`
 
   - [Manually build polybar from source:][6faa9aee]
     ```
