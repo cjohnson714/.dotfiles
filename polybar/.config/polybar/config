@@ -27,15 +27,15 @@ my_color15	= ${xrdb:color15}
 
 [bar/top]
 ;monitor = ${env:MONITOR:HDMI-1}
-;monitor = ${env:MONITOR:eDP1}
-monitor = ${env:MONITOR:VGA-1}
+monitor = ${env:MONITOR:eDP1}
+;monitor = ${env:MONITOR:VGA-1}
 bottom = false
 width = 100%
 height = 25
 offset-x = 0
 offset-y = 0
 radius = 0.0
-fixed-center = true
+fixed-center = false
 
 background = ${colors.my_background}
 foreground =  ${colors.my_foreground}
@@ -52,28 +52,28 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "Misc Tamzen:pixelsize=16:antialias=false;1"
-font-1 = "Misc Tamzen:pixelsize=16:antialias=false;1"
+font-0 = "Misc Tamzen:pixelsize=14:antialias=false;1"
+font-1 = "Misc Tamzen:pixelsize=14:antialias=false;1"
 font-2 = "Wuncon Siji:pixelsize=10:antialias=false;1"
 
-modules-left = mylabel xwindow
-modules-center = bspwm
-modules-right = date powermenu
+modules-left = mylabel bspwm2
+modules-center =
+modules-right = volume wifi battery backlight memory cpu date
 
 tray-position = right
-tray-padding = 9
+tray-padding = 3
 tray-transparent = false
 tray-offset-y = 0%
 tray-offset-x = 0%
-tray-maxsize = 18
-tray-detached = false
-tray-background = ${colors.my_color4}
+;tray-maxsize = 18
+;tray-detached = true
+;tray-background = ${colors.my_color4}
 
 wm-restack = bspwm
 
 ;override-redirect = true
 
-[module/bspwm]
+[module/bspwm1]
 type = internal/bspwm
 
 inline-mode = false
@@ -105,8 +105,55 @@ label-urgent-background = ${colors.my_background}
 label-empty = ""
 label-empty-padding = 1
 label-empty-foreground = ${colors.my_foreground}
-label-empty-background = ${colors.my_background}
 ;label-empty-underline = ${colors.my_color8}
+label-empty-background = ${colors.my_background}
+
+[module/bspwm2]
+type = internal/bspwm
+
+ws-icon-0 = I;
+ws-icon-1 = II;
+ws-icon-2 = III;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+ws-icon-default = 
+
+inline-mode = false
+
+label-focused = %icon%
+label-focused-padding = 1
+label-focused-foreground = ${colors.my_background}
+label-focused-background = ${colors.my_color4}
+;label-focused-underline = ${colors.my_color4}
+
+label-dimmed = %icon%
+label-dimmed-padding = 1
+label-dimmed-foreground = ${colors.my_foreground}
+label-dimmed-background = ${colors.my_background}
+;label-dimmed-underline = ${colors.my_color0}
+
+label-occupied = %icon%
+label-occupied-padding = 1
+label-occupied-foreground = ${colors.my_foreground}
+label-occupied-background = ${colors.my_background}
+;label-occupied-underline = ${colors.my_color8}
+
+label-urgent = %icon%
+label-urgent-padding = 1
+label-urgent-foreground = ${colors.my_color1}
+label-urgent-background = ${colors.my_background}
+;label-urgent-underline = ${colors.my_color8}
+
+label-empty = %icon%
+label-empty-padding = 1
+label-empty-foreground = #666666
+;label-empty-underline = ${colors.my_color8}
+label-empty-background = ${colors.my_background}
+
+[module/xwindow]
+type = internal/xwindow
+format = <label>
+label-maxlen = 75
 
 [module/mylabel]
 type = custom/text
@@ -116,18 +163,10 @@ content-background = ${colors.my_color4}
 
 [module/date]
 type = internal/date
-interval = 5
-
-date =
-date-alt = "%d/%m/%Y"
-
-time = " %b %e %{F-}%I:%M %p"
-time-alt = "%H:%M"
-
-format-prefix-foreground = ${colors.my_foreground}
-format-underline =
-
+time = %%{F#fba922}%%{F#ccfafafa} %H:%M%%{T-}
+date = %%{T3}%%{F#666}%{F#ccfafafa} %Y-%m-%d
 label = %date% %time%
+interval = 5
 
 [module/powermenu]
 type = custom/menu
@@ -169,10 +208,91 @@ screenchange-reload = true
 margin-top = 0
 margin-bottom = 0
 
-[module/xwindow]
+[module/cpu]
+type = internal/cpu
+interval = 2
+label = %{F#666}%{F#ccfafafa} %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+label = %{F#666}%{F#ccfafafa} %percentage_used%%
+
+[module/wifi]
+type = internal/network
+interface = wlp1s0
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+label-connected = %essid%
+label-disconnected = %{F#666}%{F#ccfafafa} not connected
+label-disconnected-foreground = #66
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = #666
+
+[module/xwindow2]
 type = internal/xwindow
 label = %title:0:30:...%
 label-padding = 10
 label-foreground = ${colors.my_color2}
+
+[module/backlight]
+type = internal/xbacklight
+
+; XRandR output to get get values from
+; Default: the monitor defined for the running bar
+output = eDP1
+
+; Create scroll handlers used to set the backlight value
+; Default: true
+enable-scroll = true
+
+format = <ramp> <label>
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = #666
+
+[module/volume]
+type = internal/volume
+master-mixer = Master
+
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
+label-volume-foreground = ${colors.my_foreground}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-foreground = #666
+
+label-muted = %{F#666}%{F#ccfafafa} sound muted
+label-muted-foreground = #99
+
+[module/battery]
+type = internal/battery
+full-at = 99
+
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+format-full = %{F#666}%{F#ccfafafa}  <label-full>
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = #666
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = #666
+animation-charging-framerate = 750
+
 
 ; vim:ft=dosini
