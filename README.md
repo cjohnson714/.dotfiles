@@ -82,3 +82,5 @@ To remove configs:
   - For colors/zsh configs
 - unix121: [github/unix121](https://github.com/unix121/i3wm-themes)
   - For polybar config
+- donniebishop: {github/donniebishop/dotfiles](https://github.com/donniebishop/dotfiles)
+  - I ripped off his floral colorscheme
