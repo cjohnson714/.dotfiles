@@ -26,7 +26,7 @@ zsh ---------> zsh config files and .zprofile
 4. [Credits](#credits)
 
 ## Dependencies
-- [bspwm](https://github.com/baskerville/bspwm), [sxhkd](https://github.com/baskerville/sxhkd), zsh, rxvt-unicode, [rofi](https://davedavenport.github.io/rofi/), vim, dunst
+- [bspwm](https://github.com/baskerville/bspwm), [sxhkd](https://github.com/baskerville/sxhkd), zsh, rxvt-unicode, [rofi](https://davedavenport.github.io/rofi/), vim, dunst, feh
 
   `sudo pacman -S bspwm sxhkd zsh rxvt-unicode rofi vim dunst feh`
 
