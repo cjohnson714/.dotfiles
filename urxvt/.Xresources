@@ -4,7 +4,7 @@
 !░▀░▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░
 !░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-#include ".colors/bulb"
+#include ".colors/floral"
 
 Xft.dpi:                96
 Xft.autohint:           0
@@ -73,8 +73,10 @@ Xcursor.size:           16
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: blk, blk, bcyan
+rofi.color-window: blk, bblk, bcyan
 rofi.color-normal: blk, wht, blk, bcyan, blk
 rofi.color-active: blk, why, blk, bcyan, blk
 rofi.color-urgent: blk, bred, blk, bred, wht
 rofi.font:         Misc Tamzen 12
+rofi.bw:           5
+rofi.sidebar-mode: false
