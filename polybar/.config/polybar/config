@@ -330,7 +330,7 @@ label-muted-foreground = ${colors.foreground}
 type = internal/battery
 full-at = 99
 battery = BAT0
-adapter = BAT0
+adapter = AC 
 time-format = %Hh %Mm
 poll-interval = 5
 
