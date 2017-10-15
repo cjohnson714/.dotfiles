@@ -80,9 +80,9 @@ urxvt*bolditalicFont:  -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: blk, bblk, bcyan
-rofi.color-normal: blk, wht, blk, bcyan, blk
-rofi.color-active: blk, why, blk, bcyan, blk
+rofi.color-window: blk, bblk, bcyn
+rofi.color-normal: blk, wht, blk, bcyn, blk
+rofi.color-active: blk, wht, blk, bcyn, blk
 rofi.color-urgent: blk, bred, blk, bred, wht
 rofi.font:         Misc Tamzen 12
 rofi.bw:           5
