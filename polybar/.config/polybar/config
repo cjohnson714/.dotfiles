@@ -6,24 +6,24 @@
 ;;;;;;;;;;;;;;;;;;;;;;
 [colors]
 ;My colors are set from .Xresources to match everything else
-background 	    = ${xrdb:background}
-foreground 	    = ${xrdb:foreground}
-black	          = ${xrdb:color0}
-red	            = ${xrdb:color1}
-green	          = ${xrdb:color2}
-yellow	        = ${xrdb:color3}
-blue	          = ${xrdb:color4}
-magenta	        = ${xrdb:color5}
-cyan	          = ${xrdb:color6}
-white	          = ${xrdb:color7}
-bright_black	  = ${xrdb:color8}
-bright_red	    = ${xrdb:color9}
-bright_green	  = ${xrdb:color10}
-bright_yellow	  = ${xrdb:color11}
-bright_blue	    = ${xrdb:color12}
-bright_magenta	= ${xrdb:color13}
-bright_cyan	    = ${xrdb:color14}
-bright_white	  = ${xrdb:color15}
+background      = ${xrdb:background}
+foreground      = ${xrdb:foreground}
+black           = ${xrdb:color0}
+red             = ${xrdb:color1}
+green           = ${xrdb:color2}
+yellow          = ${xrdb:color3}
+blue            = ${xrdb:color4}
+magenta         = ${xrdb:color5}
+cyan            = ${xrdb:color6}
+white           = ${xrdb:color7}
+bright_black    = ${xrdb:color8}
+bright_red      = ${xrdb:color9}
+bright_green    = ${xrdb:color10}
+bright_yellow   = ${xrdb:color11}
+bright_blue     = ${xrdb:color12}
+bright_magenta  = ${xrdb:color13}
+bright_cyan     = ${xrdb:color14}
+bright_white    = ${xrdb:color15}
 
 ;;;;;;;;;;;;;;;;;;;;;;
 [bar/top]
