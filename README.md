@@ -72,7 +72,7 @@ To remove configs:
 `stow -D bspwm misc sxhkd ...`
 
 ## Screenshots
-![SS1](screenshots/screenshot.png)
+![SS1](https://raw.githubusercontent.com/cjohnson714/.dotfiles/master/screenshots/screenshot.png)
 
 ## Credits
 - xero: [github/xero/dotfiles](https://github.com/xero/dotfiles)
