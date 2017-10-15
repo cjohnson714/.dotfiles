@@ -4,8 +4,11 @@
 !░▀░▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░
 !░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-#include ".colors/floral"
+#include ".colors/phallus"
 
+! ------------------------------------------------------------------------------
+! Settings
+! ------------------------------------------------------------------------------
 Xft.dpi:                96
 Xft.autohint:           0
 Xft.antialias:          1
@@ -13,6 +16,7 @@ Xft.hinting:            true
 Xft.hintstyle:          hintslight
 Xft.rgba:               rgb
 Xft.lcdfilter:          lcddefault
+Xcursor.size:           16
 
 urxvt*cursorUnderline:  1
 urxvt*cursorBlink:      1
@@ -24,6 +28,9 @@ urxvt.urgentOnBell:     true
 urxvt*letterspace:      -1
 urxvt*url-launcher:     /usr/bin/firefox
 
+! ------------------------------------------------------------------------------
+! Fonts
+! ------------------------------------------------------------------------------
 ! Tamzen
 !urxvt*font:             xft:MiscTamzen:size=11:style=Regular
 !urxvt*boldFont:         xft:MiscTamzen:size=11:style=Bold
@@ -46,9 +53,9 @@ urxvt*bolditalicFont:  -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
 ! Gohu
 !urxvt*font: -gohu-gohufont-medium-*-*-*-14-*-*-*-*-*-iso8859-*
 
-Xcursor.size:           16
-
+! ------------------------------------------------------------------------------
 ! Colors
+! ------------------------------------------------------------------------------
 *background:   bg
 *foreground:   fg
 
