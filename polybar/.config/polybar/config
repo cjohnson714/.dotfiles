@@ -3,28 +3,29 @@
 ;░█▀▀░█░█░█░░░░█░░█▀▄░█▀█░█▀▄░░░█░░░█░█░█░█░█▀▀░░█░░█░█░
 ;░▀░░░▀▀▀░▀▀▀░░▀░░▀▀░░▀░▀░▀░▀░░░▀▀▀░▀▀▀░▀░▀░▀░░░▀▀▀░▀▀▀░
 ;░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
+;;;;;;;;;;;;;;;;;;;;;;
 [colors]
 ;My colors are set from .Xresources to match everything else
-my_background 	= ${xrdb:background}
-my_foreground 	= ${xrdb:foreground}
-my_color0	= ${xrdb:color0}
-my_color1	= ${xrdb:color1}
-my_color2	= ${xrdb:color2}
-my_color3	= ${xrdb:color3}
-my_color4	= ${xrdb:color4}
-my_color5	= ${xrdb:color5}
-my_color6	= ${xrdb:color6}
-my_color7	= ${xrdb:color7}
-my_color8	= ${xrdb:color8}
-my_color9	= ${xrdb:color9}
-my_color10	= ${xrdb:color10}
-my_color11	= ${xrdb:color11}
-my_color12	= ${xrdb:color12}
-my_color13	= ${xrdb:color13}
-my_color14	= ${xrdb:color14}
-my_color15	= ${xrdb:color15}
+background 	    = ${xrdb:background}
+foreground 	    = ${xrdb:foreground}
+black	          = ${xrdb:color0}
+red	            = ${xrdb:color1}
+green	          = ${xrdb:color2}
+yellow	        = ${xrdb:color3}
+blue	          = ${xrdb:color4}
+magenta	        = ${xrdb:color5}
+cyan	          = ${xrdb:color6}
+white	          = ${xrdb:color7}
+bright_black	  = ${xrdb:color8}
+bright_red	    = ${xrdb:color9}
+bright_green	  = ${xrdb:color10}
+bright_yellow	  = ${xrdb:color11}
+bright_blue	    = ${xrdb:color12}
+bright_magenta	= ${xrdb:color13}
+bright_cyan	    = ${xrdb:color14}
+bright_white	  = ${xrdb:color15}
 
+;;;;;;;;;;;;;;;;;;;;;;
 [bar/top]
 ;monitor = ${env:MONITOR:HDMI-1}
 monitor = ${env:MONITOR:eDP1}
@@ -37,17 +38,17 @@ offset-y = 0
 radius = 0.0
 fixed-center = false
 
-background = ${colors.my_background}
-foreground =  ${colors.my_foreground}
+background = ${colors.background}
+foreground =  ${colors.foreground}
 
 line-size = 3
-line-color = ${colors.my_color4}
+line-color = ${colors.blue}
 
 border-size = 0
-border-color = ${colors.my_color2}
+border-color = ${colors.background}
 
 padding-left = 0
-padding-right = 0
+padding-right = 1
 
 module-margin-left = 1
 module-margin-right = 1
@@ -58,7 +59,7 @@ font-2 = "Wuncon Siji:pixelsize=10:antialias=false;1"
 
 modules-left = mylabel bspwm2
 modules-center =
-modules-right = volume wifi battery backlight memory cpu date
+modules-right = volume wifi battery backlight memory cpu date time
 
 tray-position = right
 tray-padding = 3
@@ -67,12 +68,13 @@ tray-offset-y = 0%
 tray-offset-x = 0%
 ;tray-maxsize = 18
 ;tray-detached = true
-;tray-background = ${colors.my_color4}
+;tray-background = ${colors.blue}
 
 wm-restack = bspwm
 
 ;override-redirect = true
 
+;;;;;;;;;;;;;;;;;;;;;;
 [module/bspwm1]
 type = internal/bspwm
 
@@ -80,34 +82,35 @@ inline-mode = false
 
 label-focused = ""
 label-focused-padding = 1
-label-focused-foreground = ${colors.my_color4}
-label-focused-background = ${colors.my_background}
-;label-focused-underline = ${colors.my_color4}
+label-focused-foreground = ${colors.blue}
+label-focused-background = ${colors.background}
+;label-focused-underline = ${colors.blue}
 
 label-dimmed = 
 label-dimmed-padding = 1
-label-dimmed-foreground = ${colors.my_foreground}
-label-dimmed-background = ${colors.my_background}
-;label-dimmed-underline = ${colors.my_color0}
+label-dimmed-foreground = ${colors.foreground}
+label-dimmed-background = ${colors.background}
+;label-dimmed-underline = ${colors.black}
 
 label-occupied = ""
 label-occupied-padding = 1
-label-occupied-foreground = ${colors.my_foreground}
-label-occupied-background = ${colors.my_background}
-;label-occupied-underline = ${colors.my_color8}
+label-occupied-foreground = ${colors.foreground}
+label-occupied-background = ${colors.background}
+;label-occupied-underline = ${colors.bright_black}
 
 label-urgent = ""
 label-urgent-padding = 1
-label-urgent-foreground = ${colors.my_color1}
-label-urgent-background = ${colors.my_background}
-;label-urgent-underline = ${colors.my_color8}
+label-urgent-foreground = ${colors.red}
+label-urgent-background = ${colors.background}
+;label-urgent-underline = ${colors.bright_black}
 
 label-empty = ""
 label-empty-padding = 1
-label-empty-foreground = ${colors.my_foreground}
-;label-empty-underline = ${colors.my_color8}
-label-empty-background = ${colors.my_background}
+label-empty-foreground = ${colors.foreground}
+;label-empty-underline = ${colors.bright_black}
+label-empty-background = ${colors.background}
 
+;;;;;;;;;;;;;;;;;;;;;;
 [module/bspwm2]
 type = internal/bspwm
 
@@ -122,65 +125,87 @@ inline-mode = false
 
 label-focused = %icon%
 label-focused-padding = 1
-label-focused-foreground = ${colors.my_background}
-label-focused-background = ${colors.my_color4}
-;label-focused-underline = ${colors.my_color4}
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.blue}
+;label-focused-underline = ${colors.blue}
 
 label-dimmed = %icon%
 label-dimmed-padding = 1
-label-dimmed-foreground = ${colors.my_foreground}
-label-dimmed-background = ${colors.my_background}
-;label-dimmed-underline = ${colors.my_color0}
+label-dimmed-foreground = ${colors.foreground}
+label-dimmed-background = ${colors.background}
+;label-dimmed-underline = ${colors.black}
 
 label-occupied = %icon%
 label-occupied-padding = 1
-label-occupied-foreground = ${colors.my_foreground}
-label-occupied-background = ${colors.my_background}
-;label-occupied-underline = ${colors.my_color8}
+label-occupied-foreground = ${colors.foreground}
+label-occupied-background = ${colors.background}
+;label-occupied-underline = ${colors.bright_black}
 
 label-urgent = %icon%
 label-urgent-padding = 1
-label-urgent-foreground = ${colors.my_color1}
-label-urgent-background = ${colors.my_background}
-;label-urgent-underline = ${colors.my_color8}
+label-urgent-foreground = ${colors.red}
+label-urgent-background = ${colors.background}
+;label-urgent-underline = ${colors.bright_black}
 
 label-empty = %icon%
 label-empty-padding = 1
-label-empty-foreground = #666666
-;label-empty-underline = ${colors.my_color8}
-label-empty-background = ${colors.my_background}
+label-empty-foreground = ${colors.bright_black}
+;label-empty-underline = ${colors.bright_black}
+label-empty-background = ${colors.background}
 
+;;;;;;;;;;;;;;;;;;;;;;
 [module/xwindow]
 type = internal/xwindow
 format = <label>
 label-maxlen = 75
 
+;;;;;;;;;;;;;;;;;;;;;;
 [module/mylabel]
 type = custom/text
 content = "  "
-content-foreground = ${colors.my_background}
-content-background = ${colors.my_color4}
+content-foreground = ${colors.background}
+content-background = ${colors.red}
 
+;;;;;;;;;;;;;;;;;;;;;;
 [module/date]
 type = internal/date
-time = %%{F#666}%%{F#ccfafafa} %I:%M%%{T-}
-date = %%{T3}%%{F#666}%{F#ccfafafa} %Y-%m-%d
-label = %date% %time%
 interval = 5
 
+date = %Y-%m-%d
+
+format =  <label>
+format-foreground = ${colors.bright_black}
+
+label = %date%
+label-foreground = ${colors.foreground}
+
+;;;;;;;;;;;;;;;;;;;;;;
+[module/time]
+type = internal/date
+interval = 5
+
+time = %I:%M%P
+
+format =  <label>
+format-foreground = ${colors.bright_black}
+
+label = %time%
+label-foreground = ${colors.foreground}
+
+;;;;;;;;;;;;;;;;;;;;;;
 [module/powermenu]
 type = custom/menu
 
 format-spacing = 1
 
 label-open = "  "
-label-open-background = ${colors.my_color1}
-label-open-foreground = ${colors.my_background}
+label-open-background = ${colors.red}
+label-open-foreground = ${colors.background}
 label-close = " x cancel "
-label-close-background = ${colors.my_color1}
-label-close-foreground = ${colors.my_background}
+label-close-background = ${colors.red}
+label-close-foreground = ${colors.background}
 label-separator = " "
-label-separator-foreground = ${colors.my_foreground}
+label-separator-foreground = ${colors.foreground}
 
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1
@@ -197,6 +222,7 @@ menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 
+;;;;;;;;;;;;;;;;;;;;;;
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -204,43 +230,62 @@ screenchange-reload = true
 ;compositing-foreground = source
 ;compositing-border = over
 
+;;;;;;;;;;;;;;;;;;;;;;
 [global/wm]
 margin-top = 0
 margin-bottom = 0
 
+;;;;;;;;;;;;;;;;;;;;;;
 [module/cpu]
 type = internal/cpu
 interval = 2
-label = %{F#666}%{F#ccfafafa} %percentage%%
 
+label = %percentage%%
+label-foreground = ${colors.foreground}
+
+format =  <label>
+format-foreground = ${colors.bright_black}
+
+;;;;;;;;;;;;;;;;;;;;;;
 [module/memory]
 type = internal/memory
 interval = 2
-label = %{F#666}%{F#ccfafafa} %percentage_used%%
 
+label = %percentage_used%%
+label-foreground = ${colors.foreground}
+
+format =  <label>
+format-foreground = ${colors.bright_black}
+
+;;;;;;;;;;;;;;;;;;;;;;
 [module/wifi]
 type = internal/network
 interface = wlp1s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
+format-disconnected =  <label-disconnected>
+format-disconnected-foreground = ${colors.bright_black}
 label-connected = %essid%
-label-disconnected = %{F#666}%{F#ccfafafa} not connected
-label-disconnected-foreground = #66
+label-connected-foreground = ${colors.foreground}
+label-disconnected = not connected
+label-disconnected-foreground = ${colors.foreground}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = #666
+ramp-signal-foreground = ${colors.bright_black}
 
+;;;;;;;;;;;;;;;;;;;;;;
 [module/xwindow2]
 type = internal/xwindow
 label = %title:0:30:...%
 label-padding = 10
-label-foreground = ${colors.my_color2}
+label-foreground = ${colors.green}
 
+;;;;;;;;;;;;;;;;;;;;;;
 [module/backlight]
 type = internal/xbacklight
 
@@ -253,45 +298,65 @@ output = eDP1
 enable-scroll = true
 
 format = <ramp> <label>
+format-foreground = ${colors.foreground}
+
 ramp-0 = 
 ramp-1 = 
 ramp-2 = 
-ramp-foreground = #666
+ramp-foreground = ${colors.bright_black}
 
+;;;;;;;;;;;;;;;;;;;;;;
 [module/volume]
 type = internal/volume
 master-mixer = Master
 
 format-volume = <ramp-volume> <label-volume>
+format-muted =  <label-muted>
+format-muted-foreground = ${colors.bright_black}
 label-volume = %percentage%%
-label-volume-foreground = ${colors.my_foreground}
+label-volume-foreground = ${colors.foreground}
 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 ramp-volume-3 = 
-ramp-volume-foreground = #666
+ramp-volume-foreground = ${colors.bright_black}
 
-label-muted = %{F#666}%{F#ccfafafa} sound muted
-label-muted-foreground = #99
+label-muted = sound muted
+label-muted-foreground = ${colors.foreground}
 
+;;;;;;;;;;;;;;;;;;;;;;
 [module/battery]
 type = internal/battery
 full-at = 99
+battery = BAT0
+adapter = BAT0
+time-format = %Hh %Mm
+poll-interval = 5
 
 format-charging = <animation-charging> <label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
-format-full = %{F#666}%{F#ccfafafa}  <label-full>
+format-full =  <label-full>
+format-full-foreground = ${colors.bright_black}
+
+label-full = Fully Charged
+label-full-foreground = ${colors.foreground}
+
+label-discharging = %percentage%% (%time%)
+label-discharging-foreground = ${colors.foreground}
+
+label-charging = %percentage%% (%time%)
+label-charging-foreground = ${colors.foreground}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-foreground = #666
+ramp-capacity-foreground = ${colors.bright_black}
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = #666
+animation-charging-foreground = ${colors.bright_black}
 animation-charging-framerate = 750
 
 
