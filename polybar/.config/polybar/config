@@ -163,7 +163,7 @@ content-background = ${colors.my_color4}
 
 [module/date]
 type = internal/date
-time = %%{F#fba922}%%{F#ccfafafa} %H:%M%%{T-}
+time = %%{F#666}%%{F#ccfafafa} %I:%M%%{T-}
 date = %%{T3}%%{F#666}%{F#ccfafafa} %Y-%m-%d
 label = %date% %time%
 interval = 5
