@@ -135,7 +135,7 @@ alt + ctrl + shift + space
 	bspc desktop -f next
 
 {F6,F7}
-	xbacklight -{dec,inc} 10
+	xbacklight -{dec,inc} 5
 
 F8
 	amixer -q set Master toggle
