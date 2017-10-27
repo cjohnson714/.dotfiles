@@ -53,8 +53,11 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "Misc Tamzen:pixelsize=14:antialias=false;1"
-font-1 = "Misc Tamzen:pixelsize=14:antialias=false;1"
+;font-0 = "Misc Tamzen:pixelsize=14:antialias=false;1"
+;font-1 = "Misc Tamzen:pixelsize=14:antialias=false;1"
+
+font-0 = "Lucy Tewi:pixelsize=14:antialias=false;1"
+font-1 = "Lucy Tewi:pixelsize=14:antialias=false;1"
 font-2 = "Wuncon Siji:pixelsize=10:antialias=false;1"
 
 modules-left = mylabel bspwm2
