@@ -4,7 +4,7 @@
 !░▀░▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░
 !░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-#include ".colors/phallus"
+#include ".colors/bluetype"
 
 ! ------------------------------------------------------------------------------
 ! Settings
@@ -22,7 +22,7 @@ urxvt*cursorUnderline:  1
 urxvt*cursorBlink:      1
 urxvt*scrollBar:        false
 urxvt*depth:            32
-urxvt*internalBorder:   5
+urxvt*internalBorder:   5 
 urxvt*dynamicColors:    on
 urxvt.urgentOnBell:     true
 urxvt*letterspace:      -1
@@ -42,17 +42,21 @@ urxvt*url-launcher:     /usr/bin/firefox
 !urxvt*boldFont:         xft:MiscTamzenForPowerline:size=11:style=Bold
 !urxvt*italicFont:       xft:MiscTamzenForPowerline:size=11:style=Regular
 !urxvt*bolditalicFont:   xft:MiscTamzenForPowerline:size=11:style=Bold
-urxvt*font:            -misc-tamzenforpowerline-medium-*-*-*-14-*-*-*-*-*-*-*
-urxvt*boldFont:        -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
-urxvt*italicFont:      -misc-tamzenforpowerline-medium-*-*-*-14-*-*-*-*-*-*-*
-urxvt*bolditalicFont:  -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
+!urxvt*font:            -misc-tamzenforpowerline-medium-*-*-*-14-*-*-*-*-*-*-*
+!urxvt*boldFont:        -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
+!urxvt*italicFont:      -misc-tamzenforpowerline-medium-*-*-*-14-*-*-*-*-*-*-*
+!urxvt*bolditalicFont:  -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
 
 ! Lemon
 !urxvt*font:             -benis-lemon-*-*-*-*-*-*-*-75-*-*-*-*
+!urxvt*boldFont:         -benis-lemon-*-*-*-*-*-*-*-75-*-*-*-*
 
 ! Gohu
 !urxvt*font: -gohu-gohufont-medium-*-*-*-14-*-*-*-*-*-iso8859-*
 
+! tewi
+urxvt*font:             -lucy-tewi-medium-r-normal--11-90-75-75-p-58-*-*
+urxvt*boldFont:         -lucy-tewi-bold-r-normal--11-90-75-75-p-58-*-*
 ! ------------------------------------------------------------------------------
 ! Colors
 ! ------------------------------------------------------------------------------
@@ -80,10 +84,10 @@ urxvt*bolditalicFont:  -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: blk, bblk, bcyn
-rofi.color-normal: blk, wht, blk, bcyn, blk
-rofi.color-active: blk, wht, blk, bcyn, blk
-rofi.color-urgent: blk, bred, blk, bred, wht
+rofi.color-window: bg, bblk, red
+rofi.color-normal: bg, wht, blk, red, blk
+rofi.color-active: bg, wht, blk, red, blk
+rofi.color-urgent: bg, bred, blk, bred, wht
 rofi.font:         Misc Tamzen 12
 rofi.bw:           5
 rofi.sidebar-mode: false
