@@ -11,23 +11,23 @@
 
 # terminal emulator
 alt + shift+ Return
-	urxvtc
+    urxvtc
 
 # program launcher
 alt + r
-	rofi -show run
+    rofi -show run
 
 # make sxhkd reload its configuration files:
 alt + Escape
-	pkill -USR1 -x sxhkd
+    pkill -USR1 -x sxhkd
 
 # firefox
 alt + b
-	firefox
+    firefox
 
 # screenshot
 Print
-	scrot -q 100
+    scrot -q 100
 
 #
 # bspwm hotkeys
@@ -35,23 +35,23 @@ Print
 
 # quit bspwm normally
 alt + shift + Escape
-	bspc quit
+    bspc quit
 
 # close
 alt + shift + x
-	bspc node -c
+    bspc node -c
 
 # alternate between the tiled and monocle layout
 alt + space
-	bspc desktop -l next
+    bspc desktop -l next
 
 # if the current node is automatic, send it to the last manual, otherwise pull the last leaf
 alt + y
-	bspc query -N -n focused.automatic && bspc node -n last.!automatic || bspc node last.leaf -n focused
+    bspc query -N -n focused.automatic && bspc node -n last.!automatic || bspc node last.leaf -n focused
 
 # swap the current node and the biggest node
 alt + g
-	bspc node -s biggest
+    bspc node -s biggest
 
 #
 # state/flags
@@ -59,7 +59,7 @@ alt + g
 
 # set the window state
 alt + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+    bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 #
 # focus/swap
@@ -67,33 +67,29 @@ alt + {t,shift + t,s,f}
 
 # focus the node in the given direction
 alt + {_,shift + }{h,j,k,l}
-	bspc node -{f,s} {west,south,north,east}
-
-# focus the node for the given path jump
-alt + {p,b,comma,period}
-	bspc node -f @{parent,brother,first,second}
+    bspc node -{f,s} {west,south,north,east}
 
 # focus the next/previous node
 alt + {_,shift + }c
-	bspc node -f {next,prev}
+    bspc node -f {next,prev}
 
 # focus the next/previous desktop
 alt + bracket{left,right}
-	bspc desktop -f {prev,next}
+    bspc desktop -f {prev,next}
 
 # focus the last node/desktop
 alt + {grave,Tab}
-	bspc {node,desktop} -f last
+    bspc {node,desktop} -f last
 
 # focus the older or newer node in the focus history
 alt + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
-	bspc wm -h on
+    bspc wm -h off; \
+    bspc node {older,newer} -f; \
+    bspc wm -h on
 
 # focus or send to the given desktop
 alt + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+    bspc {desktop -f,node -d} '^{1-9,10}'
 
 #
 # preselect
@@ -101,44 +97,45 @@ alt + {_,shift + }{1-9,0}
 
 # preselect the direction
 alt + ctrl + {h,j,k,l}
-	bspc node -p {west,south,north,east}
+    bspc node -p {west,south,north,east}
 
 # preselect the ratio
 alt + ctrl + {1-9}
-	bspc node -o 0.{1-9}
+    bspc node -o 0.{1-9}
 
 # cancel the preselection for the focused node
 alt + ctrl + space
- bspc node -p cancel
+    bspc node -p cancel
 
 # cancel the preselection for the focused desktop
 alt + ctrl + shift + space
-	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+    bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-
+#
 # Chromebook-specific hotkeys
+#
 
 #Web browser Back/Forward hotkeys
 {@F1, @F2}
-	xte 'keydown Alt_L' 'key {Left,Right}' 'keyup Alt_L'
+    xte 'keydown Alt_L' 'key {Left,Right}' 'keyup Alt_L'
 
 # Web browser Refresh shortcut
 @F3
-	xte 'keydown Control_L' 'key r' 'keyup Control_L'
+    xte 'keydown Control_L' 'key r' 'keyup Control_L'
 
 # Maximize window
 @F4
-	bspc desktop -l next
+    bspc desktop -l next
 
 # Move desktop right
 @F5
-	bspc desktop -f next
+    bspc desktop -f next
 
 {F6,F7}
-	xbacklight -{dec,inc} 5
+    xbacklight -{dec,inc} 5
 
 F8
-	amixer -q set Master toggle
+    amixer -q set Master toggle
 
 {F9,F10}
-	amixer set Master 5%{-,+} unmute
+    amixer set Master 5%{-,+} unmute
