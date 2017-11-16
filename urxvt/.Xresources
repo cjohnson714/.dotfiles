@@ -42,10 +42,10 @@ urxvt*url-launcher:     /usr/bin/firefox
 !urxvt*boldFont:         xft:MiscTamzenForPowerline:size=11:style=Bold
 !urxvt*italicFont:       xft:MiscTamzenForPowerline:size=11:style=Regular
 !urxvt*bolditalicFont:   xft:MiscTamzenForPowerline:size=11:style=Bold
-!urxvt*font:            -misc-tamzenforpowerline-medium-*-*-*-14-*-*-*-*-*-*-*
-!urxvt*boldFont:        -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
-!urxvt*italicFont:      -misc-tamzenforpowerline-medium-*-*-*-14-*-*-*-*-*-*-*
-!urxvt*bolditalicFont:  -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
+urxvt*font:            -misc-tamzenforpowerline-medium-*-*-*-14-*-*-*-*-*-*-*
+urxvt*boldFont:        -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
+urxvt*italicFont:      -misc-tamzenforpowerline-medium-*-*-*-14-*-*-*-*-*-*-*
+urxvt*bolditalicFont:  -misc-tamzenforpowerline-bold-*-*-*-14-*-*-*-*-*-*-*
 
 ! Lemon
 !urxvt*font:             -benis-lemon-*-*-*-*-*-*-*-75-*-*-*-*
@@ -55,8 +55,8 @@ urxvt*url-launcher:     /usr/bin/firefox
 !urxvt*font: -gohu-gohufont-medium-*-*-*-14-*-*-*-*-*-iso8859-*
 
 ! tewi
-urxvt*font:             -lucy-tewi-medium-r-normal--11-90-75-75-p-58-*-*
-urxvt*boldFont:         -lucy-tewi-bold-r-normal--11-90-75-75-p-58-*-*
+!urxvt*font:             -lucy-tewi-medium-r-normal--11-90-75-75-p-58-*-*
+!urxvt*boldFont:         -lucy-tewi-bold-r-normal--11-90-75-75-p-58-*-*
 ! ------------------------------------------------------------------------------
 ! Colors
 ! ------------------------------------------------------------------------------
@@ -88,6 +88,6 @@ rofi.color-window: bg, bblk, red
 rofi.color-normal: bg, wht, blk, red, blk
 rofi.color-active: bg, wht, blk, red, blk
 rofi.color-urgent: bg, bred, blk, bred, wht
-rofi.font:         Misc Tamzen 9
+rofi.font:         Misc Tamzen 11 
 rofi.bw:           5
 rofi.sidebar-mode: false
