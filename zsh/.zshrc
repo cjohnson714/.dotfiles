@@ -1,6 +1,10 @@
 export XDG_CONFIG_HOME=$HOME/.config
 
 alias ls='ls --color=auto'
+autoload -Uz compinit promptinit
+compinit
+
+for config (~/.zsh/*.zsh) source $config
 
 PATH="$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
