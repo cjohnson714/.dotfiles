@@ -1,4 +1,4 @@
-59
+45
 Tamzen10x20b.pcf -misc-tamzen-bold-r-normal--20-145-100-100-c-100-iso8859-1
 Tamzen10x20r.pcf -misc-tamzen-medium-r-normal--20-145-100-100-c-100-iso8859-1
 Tamzen5x9b.pcf -misc-tamzen-bold-r-normal--9-65-100-100-c-50-iso8859-1
@@ -41,20 +41,6 @@ gohufont-uni-14.pcf -gohu-gohufont-medium-r-normal--14-100-100-100-c-80-iso10646
 gohufont-uni-14b.pcf -gohu-gohufont-bold-r-normal--14-100-100-100-c-80-iso10646-1
 lemon-j.pcf -benis-lemon-abunai-abunai-medium-r-normal--10-110-75-75-m-50-iso10646-1
 lemon.pcf -benis-lemon-medium-r-normal--10-110-75-75-m-50-iso8859-1
-lokaltog-fixed-10b-iso10646.pcf -lokaltog-fixed-bold-r-normal--10-100-75-75-c-60-iso10646-1
-lokaltog-fixed-10r-iso10646.pcf -lokaltog-fixed-medium-r-normal--10-100-75-75-c-60-iso10646-1
-lokaltog-fixed-10r-iso8859.pcf -lokaltog-fixed-medium-r-normal--10-100-75-75-c-60-iso8859-1
-lokaltog-fixed-12b-iso10646.pcf -lokaltog-fixed-bold-r-normal--12-120-75-75-c-60-iso10646-1
-lokaltog-fixed-12r-iso10646.pcf -lokaltog-fixed-medium-r-normal--12-120-75-75-c-60-iso10646-1
-lokaltog-symbols-11-iso10646.pcf -lokaltog-symbols-medium-r-normal--11-110-75-75-p-75-iso10646-1
+lime.pcf -artwiz-lime-medium-r-normal--10-110-75-75-m-50-iso8859-1
 siji.pcf -wuncon-siji-medium-r-normal--10-100-75-75-c-80-iso10646-1
 stlarch.pcf -misc-stlarch-medium-r-normal--10-100-75-75-c-80-iso10646-1
-tamsynmod6x12b.pcf -misc-tamsynmod-bold-r-normal--12-87-100-100-c-60-iso8859-1
-tamsynmod6x12r.pcf -misc-tamsynmod-medium-r-normal--12-87-100-100-c-60-iso8859-1
-tamsynmod7x14b.pcf -misc-tamsynmod-bold-r-normal--14-101-100-100-c-70-iso8859-1
-tamsynmod7x14r.pcf -misc-tamsynmod-medium-r-normal--14-101-100-100-c-70-iso8859-1
-tamsynmod8x15b.pcf -misc-tamsynmod-bold-r-normal--15-108-100-100-c-80-iso8859-1
-tamsynmod8x15r.pcf -misc-tamsynmod-medium-r-normal--15-108-100-100-c-80-iso8859-1
-tamsynmod8x17b.pcf -misc-tamsynmod-bold-r-normal--17-123-100-100-c-80-iso8859-1
-tamsynmod8x17r.pcf -misc-tamsynmod-medium-r-normal--17-123-100-100-c-80-iso8859-1
-uushi.pcf -benis-uushi-medium-r-normal--11-90-75-75-p-58-iso10646-1
