@@ -11,7 +11,7 @@
 
 # terminal emulator
 alt + shift+ Return
-    urxvtc
+    kitty
 
 # program launcher
 alt + r
@@ -110,32 +110,3 @@ alt + ctrl + space
 # cancel the preselection for the focused desktop
 alt + ctrl + shift + space
     bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
-
-#
-# Chromebook-specific hotkeys
-#
-
-#Web browser Back/Forward hotkeys
-{@F1, @F2}
-    xte 'keydown Alt_L' 'key {Left,Right}' 'keyup Alt_L'
-
-# Web browser Refresh shortcut
-@F3
-    xte 'keydown Control_L' 'key r' 'keyup Control_L'
-
-# Maximize window
-@F4
-    bspc desktop -l next
-
-# Move desktop right
-@F5
-    bspc desktop -f next
-
-{F6,F7}
-    xbacklight -{dec,inc} 5
-
-F8
-    amixer -q set Master toggle
-
-{F9,F10}
-    amixer set Master 5%{-,+} unmute

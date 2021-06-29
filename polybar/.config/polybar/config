@@ -51,8 +51,8 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "Hack:size=9;1"
-font-1 = "Hack:size=9;1"
+font-0 = "JetBrains Mono:size=9;1"
+font-1 = "JetBrains Mono:size=9;1"
 
 font-2 = "Siji:pixelsize=10:antialias=false;1"
 
@@ -112,6 +112,8 @@ label-empty-background = ${colors.background}
 ;;;;;;;;;;;;;;;;;;;;;;
 [module/bspwm2]
 type = internal/bspwm
+
+pin-workspaces = false
 
 ws-icon-0 = I;
 ws-icon-1 = II;
