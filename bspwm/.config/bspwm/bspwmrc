@@ -6,10 +6,15 @@
 #░▀▀░░▀▀▀░▀░░░▀░▀░▀░▀░░░▀▀▀░▀▀▀░▀░▀░▀░░░▀▀▀░▀▀▀░
 #░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-sxhkd &
+pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+#bspc monitor -d I II III IV V VI VII VIII IX X
 #bspc monitor -d 1 2 3 4 5
+bspc monitor DP-0 -n 0 -d I
+bspc monitor DP-2 -n 1 -d II
+bspc monitor HDMI-0 -n 2 -d III
+bspc monitor DP-4 -n 3 -d IV
+bspc wm --reorder-monitors 0 1 2 3
 
 bspc config border_width                5
 bspc config window_gap                  5 
