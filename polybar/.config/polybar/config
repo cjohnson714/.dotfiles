@@ -58,9 +58,9 @@ font-2 = "Siji:pixelsize=10:antialias=false;1"
 
 modules-left = mylabel bspwm2
 modules-center =
-modules-right = volume wifi battery backlight memory cpu date time
+modules-right = pulseaudio memory cpu date time
 
-tray-position = right
+tray-position = ${env:TRAY_POS}
 tray-padding = 3
 tray-transparent = false
 tray-offset-y = 0%
@@ -326,6 +326,40 @@ ramp-volume-foreground = ${colors.bright_black}
 label-muted = sound muted
 label-muted-foreground = ${colors.foreground}
 
+;;;;;;;;;;;;;;;;;;;;;;
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+; If not, uses default sink
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+
+; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; Default: true
+use-ui-max = true
+
+; Interval for volume increase/decrease (in percent points)
+; Default: 5
+interval = 5
+
+format-volume = <ramp-volume> <label-volume>
+format-muted =  <label-muted>
+format-muted-foreground = ${colors.bright_black}
+label-volume = %percentage%%
+label-volume-foreground = ${colors.foreground}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-foreground = ${colors.bright_black}
+
+label-muted = sound muted
+label-muted-foreground = ${colors.foreground}
+
+; Right and Middle click
+click-right = pavucontrol
+; click-middle = 
 ;;;;;;;;;;;;;;;;;;;;;;
 [module/battery]
 type = internal/battery
