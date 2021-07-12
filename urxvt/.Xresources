@@ -87,6 +87,6 @@ rofi.color-window: bg, bblk, red
 rofi.color-normal: bg, wht, blk, red, blk
 rofi.color-active: bg, wht, blk, red, blk
 rofi.color-urgent: bg, bred, blk, bred, wht
-rofi.font:         Misc Tamzen 11
+rofi.font:         JetBrains Mono 11
 rofi.bw:           5
 rofi.sidebar-mode: false
